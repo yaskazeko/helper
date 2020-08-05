@@ -10,4 +10,5 @@ print (dir)
 listFiles = os.listdir(dir)
 
 for f in listFiles:
-    print(f)
+    print(f, os.stat(f).st_mtime)
+    
